@@ -1,0 +1,19 @@
+{
+  "name": "test-nodejs-demo",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/NguyenBuu20122/Test-Nodejs-demo.git"
+  },
+  "author": "Nguyen Buu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
