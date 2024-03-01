@@ -1,9 +1,10 @@
 const express=require('express');
 const router=express.Router();
-//khai bao round
+//khai bao route
 router.get('/', (req, res) => {
   res.send('Hello World! with nodemon')
 })
+
 
 router.get('/abc',(req,res)=>
 {
