@@ -1,8 +1,8 @@
 require('dotenv').config() // khai báo sử dụng dotenv
 const express = require('express'); //commonjs
 const app = express(); //app express
-const webRoutes=require('./routes/web.js') // khai báo sử dụng file web.js (route)
 const configViewEngine=require('./config/viewEngine');// khai báo sử dụng file viewEngine
+const webRoutes=require('./routes/web.js') // khai báo sử dụng file web.js (route)
 const port = process.env.PORT || 8888;    
 const hostname=process.env.HOST_NAME;
 

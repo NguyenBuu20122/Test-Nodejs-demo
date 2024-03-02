@@ -1,14 +1,10 @@
 const express=require('express');
 const router=express.Router();
+
+const {getHomepage} = require('../controllers/homeController');
+const {getimagepage,getimagepage1}=require('../controllers/imgPage');
 //khai bao route
-router.get('/', (req, res) => {
-  res.send('Hello World! with nodemon')
-})
-
-
-router.get('/abc',(req,res)=>
-{
-    res.render('sample.ejs')
-})
-
+router.get('/', getHomepage);
+router.get('/abc',getimagepage);
+router.get('/a1',getimagepage1);
 module.exports=router;
