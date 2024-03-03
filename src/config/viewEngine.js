@@ -10,4 +10,5 @@ const configViewEngine=(app)=>
     app.use(express.static(path.join('./src','public')))// đường dẫn tới thư mục chứa file tĩnh- vị trí hiện tại là file server.js- cùng thư mục mẹ src- cùng cấp thư mục public(thu mục chứa file tĩnh)
 
 }
+
 module.exports=configViewEngine;

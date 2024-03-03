@@ -12,4 +12,4 @@ configViewEngine(app);//gọi hàm trong thư mục config -file ViewEngine- hà
 app.use('/',webRoutes)
 app.listen(port,hostname, () => {
   console.log(`Example app listening on port ${port}`)
-})
+}) 
