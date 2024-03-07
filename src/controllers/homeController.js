@@ -13,12 +13,11 @@ const createNewuser=(req,res)=>{
    
 
    connection.query(
-    `INSERT INTO 
-    User (email,name,city) 
-    Values(?,?,?)`,[email,name,city],
+    "INSERT INTO `user` (email,name,city) Values (?,?,?)",[email,name,city],
     function (err,result)
     {
         console.log('results= ', result)
+        console.log('err= ', err)
         res.send('create new done!')
     }
    )

@@ -9,7 +9,7 @@ const port = process.env.PORT || 8888;
 const hostname=process.env.HOST_NAME;
 
 app.use(express.json()); // Used to parse JSON bodies
-app.use(express.urlencoded()); //Parse URL-encoded bodies
+app.use(express.urlencoded({ extended: true })); //Parse URL-encoded bodies
 
 //gọi hàm configViewEngine để xử lý route app thực thi file sample.ejs
 configViewEngine(app);//gọi hàm trong thư mục config -file ViewEngine- hàm configViewEngine
